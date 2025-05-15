@@ -1,23 +1,79 @@
 <!doctype html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна</title>
+    <script src="main.js"></script>
     <link rel="stylesheet" href="css/styles.css">
-    <title>Document</title>
 </head>
 <body>
-<h1>
-    hello world
-</h1>
-<h2>
-hello
-</h2>
+<header class="header">
+    <div class="header__left">
+        <a href="index.html" class="logo">
+            <img src="image/Frame.png" alt="Logo">
+        </a>
+        <div class="logotipi">
+            <a href="#"><img src="image/whats_up.png" alt="WhatsApp" /></a>
+            <a href="#"><img src="image/facebook.png" alt="Facebook" /></a>
+            <a href="#"><img src="image/insta.png" alt="Instagram" /></a>
+            <a href="#"><img src="image/telegram.png" alt="Telegram" /></a>
+            <a href="#"><img src="image/youtube.png" alt="YouTube" /></a>
+        </div>
+    </div>
+    <div class="header__right">
+        <div class="contacts">
+            <img src="image/phone.png" alt="Phone">
+            <span>+34 641 35 22 51</span>
+        </div>
+        <div class="location">
+            <img src="image/location%201.png" alt="Location">
+            <span>Carrer de Béjar, 38, Barcelona</span>
+        </div>
+        <div class="language">
+            <select>
+                <option>UKR</option>
+                <option>RU</option>
+                <option>ESP</option>
+                <option>EN</option>
+            </select>
+        </div>
+    </div>
+</header>
+<div class="poloska"></div>
+<section class="menu">
+    <div class="dropdown">
+        <button class="dropdown-toggle">
+            Наші напрямки
+            <img src="image/arrow_down.png" alt="↓" class="arrow arrow-down" />
+            <img src="image/arrow_down.png" alt="↑" class="arrow arrow-up" />
+        </button>
+        <ul class="dropdown-menu">
+            <li>Гуманітарний центр</li>
+            <li>Український центр у Барселоні</li>
+            <li>Бібліотека</li>
+            <li>Школа та садочок</li>
+            <li>Український сад</li>
+        </ul>
+    </div>
+    <a class="text-none" href="#">Звіти</a>
+    <a class="text-none" href="#">Новини</a>
+    <a class="text-none" href="#">Контакти</a>
+</section>
+<section class="main">
+    <h1>Українська Асоціація «Джерело»</h1>
+    <p class="text_20">Розвиток та підтримка української
+        діаспори в Каталонії, Іспанії з 2012 року </p>
+    <div class="button_first">
+    <button class="btn btn-blue">Зв’язатись</button>
+    <button class="btn btn-yellow">Підтримати</button>
+    </div>
+</section>
+<div class="marquee-container">
+    <div class="marquee">
+        <span>🇺🇦 Допомагаємо 🇺🇦 Консультуємо 🇺🇦 Розвиваємо 🇺🇦 Інтегруємо 🇺🇦 Допомагаємо 🇺🇦 Консультуємо 🇺🇦 Допомагаємо 🇺🇦 Консультуємо 🇺🇦 Розвиваємо 🇺🇦 Інтегруємо 🇺🇦 Допомагаємо 🇺🇦 Консультуємо </span>
+        <span>🇺🇦 Розвиваємо 🇺🇦 Інтегруємо 🇺🇦 Допомагаємо 🇺🇦 Консультуємо 🇺🇦 Допомагаємо 🇺🇦 Консультуємо 🇺🇦 Розвиваємо 🇺🇦 Інтегруємо 🇺🇦 Допомагаємо 🇺🇦 Консультуємо 🇺🇦 </span>
+    </div>
+</div>
 </body>
 </html>
