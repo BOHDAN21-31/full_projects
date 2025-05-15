@@ -1,5 +1,64 @@
+root {
+  --text_main1: #1A7DF0;
+  --text_main2: #FFFFFF;
+  --secondary_1: #FFE711;
+  --secondary_2: #005BC5;
+  --secondary_3: #333333;
+}
+
 body {
-  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  font-size: 65px;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 42px;
+  font-weight: 400;
+}
+
+h3, h4, h5 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.Text_20 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.Text_18 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.Small_Text {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.Ticker {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+button {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+menu {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+link {
+  font-size: 12px;
+  font-weight: 400;
+  text-underline: black;
 }
 
 /*# sourceMappingURL=styles.css.map */
