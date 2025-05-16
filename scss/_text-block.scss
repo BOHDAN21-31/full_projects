@@ -1,0 +1,42 @@
+.text__section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .text__section h1 {
+    text-align: center;
+  }
+  
+  .text__section-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .text__section-row h3,
+  .text__section-row p {
+    width: 48%;
+    margin: 0;
+  }
+
+  .text__section-container {
+    max-width: 710px;
+    
+  }
+  .text__section-row h3 {
+    font-size: 30px;
+    padding-right: 80px;
+    line-height: 130%;
+    
+  }
+
+  .text__section-row p {
+    padding-left: 80px;
+    line-height: 150%;
+  }
+
+  
+  
