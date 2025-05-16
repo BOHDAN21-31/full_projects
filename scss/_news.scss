@@ -1,5 +1,4 @@
 .news-section {
-    // max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
 }
@@ -56,4 +55,9 @@ font-size: 20px;
     font-size: 12px;
     margin-bottom: 15px;
     font-weight: 200;
+}
+.news-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
 }

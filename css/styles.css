@@ -761,6 +761,12 @@ li {
   font-weight: 200;
 }
 
+.news-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
 .contacts-section {
   background-color: #1A7DF0;
   color: white;
@@ -791,11 +797,9 @@ li {
 
 .social-icons {
   margin: 15px 0;
-  color: #F9D100;
 }
 
 .social-icons a {
-  color: #F9D100;
   font-size: 24px;
   margin-right: 15px;
   text-decoration: none;
