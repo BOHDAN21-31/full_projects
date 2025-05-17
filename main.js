@@ -30,3 +30,4 @@ setInterval(() => {
     index = (index + 1) % phrases.length;
     marquee.textContent = phrases[index];
 }, 15000);
+
