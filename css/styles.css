@@ -816,6 +816,36 @@ li {
   margin-right: 8px;
 }
 
+.projects-container {
+  margin: 150px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0;
+  padding: 0;
+  grid-auto-rows: auto;
+  max-width: 1440px;
+}
+
+.img-7 {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+
+.project-card {
+  margin: 0;
+  padding: 0;
+}
+
+.project-title {
+  width: 100%;
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333333;
+  font-weight: 300;
+}
+
 body {
   background-image: url("../image/bg.png");
   width: 100%;
