@@ -584,7 +584,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
   }
   .video .text_for_video .video_head {
     font-size: 30px;
@@ -612,6 +612,20 @@ body {
   .video_btns {
     max-width: 224px;
     max-height: 53px;
+  }
+  .text_for_video {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+}
+@media (max-width: 600px) {
+  .main_header {
+    max-width: 460px;
+    margin: 0 auto;
+    text-align: center;
   }
 }
 .footer {
@@ -1209,6 +1223,38 @@ li {
   font-weight: 300;
 }
 
+.benefit-itemings {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-wrap: wrap;
+}
+
+.work-schedule {
+  background: #f8f9fc;
+  color: #1A7DF0;
+  padding: 15px;
+  border-radius: 12px;
+  margin: 20px 0;
+  text-align: center;
+}
+.work-schedule .for_oclock {
+  font-size: 32px;
+  margin: 0;
+  font-weight: 400;
+}
+.work-schedule .for_oclock:last-child {
+  font-size: 32px;
+  font-weight: 500;
+  color: #1A7DF0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 body {
   background-image: url("../image/bg.png");
   width: 100%;
@@ -1307,11 +1353,9 @@ body {
 
 @media (max-width: 1450px) {
   .main_header {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 32px 20px;
-    text-wrap: wrap;
+    max-width: 460px;
+    margin: 0 auto;
+    text-align: center;
   }
   .p_for_header {
     padding: 0;
@@ -1337,7 +1381,7 @@ body {
   }
   .for_p {
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     max-width: 80%;
   }
   .video-wrapper,
@@ -1384,12 +1428,38 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-.membership-section .info-box h2, .membership-section .join-box h2, .membership-section .benefits-box h2, .membership-section .info-box h4, .membership-section .join-box h4, .membership-section .benefits-box h4 {
+.membership-section .info-box .button_for_membership, .membership-section .join-box .button_for_membership, .membership-section .benefits-box .button_for_membership {
   margin-bottom: 20px;
 }
-.membership-section .info-box p, .membership-section .join-box p, .membership-section .benefits-box p {
-  font-size: 20px;
-  margin-bottom: 10px;
+@media (max-width: 768px) {
+  .membership-section .membership-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .membership-section .membership-section .benefits-box,
+  .membership-section .membership-section .join-box {
+    max-width: 100%;
+  }
+  .membership-section .membership-section .button_for_membership {
+    font-size: 28px;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .membership-section .info-box, .membership-section .join-box, .membership-section .benefits-box {
+    width: 100%;
+    max-width: 460px;
+    box-sizing: border-box;
+  }
+  .membership-section .join-button {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+  }
 }
 .membership-section .benefits-box {
   background-color: #1A7DF0;
