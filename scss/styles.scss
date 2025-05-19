@@ -109,6 +109,29 @@ body {
 
 
 @media (max-width: 1450px) {
+  .main_header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 20px;
+    text-wrap: wrap;
+  }
+  .p_for_header {
+    padding: 0;
+  }
+  .header_h1 {
+    font-size: 38px;
+    flex-direction: column;
+    text-wrap: wrap;
+    align-items: center;
+    padding: 0;
+  }
+  .marquee-container {
+    width: 100%;
+  }
+  .button_first {
+    padding: 0;
+  }
   .video {
     flex-direction: column;
     padding: 40px 20px;

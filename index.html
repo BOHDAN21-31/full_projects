@@ -14,38 +14,81 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="header__left">
-        <a href="index.html" class="logo">
-          <img src="image/Frame.png" alt="Logo" />
-        </a>
-        <div class="logotipi">
-          <a href="#"><img src="image/whats_up.png" alt="WhatsApp" /></a>
-          <a href="#"><img src="image/facebook.png" alt="Facebook" /></a>
-          <a href="#"><img src="image/insta.png" alt="Instagram" /></a>
-          <a href="#"><img src="image/telegram.png" alt="Telegram" /></a>
-          <a href="#"><img src="image/youtube.png" alt="YouTube" /></a>
-        </div>
+  <header class="header">
+    <div class="header__left">
+      <a href="index.html" class="logo">
+        <img src="image/Frame.png" alt="Logo">
+      </a>
+      <div class="logotipi">
+        <a href="#"><img src="image/whats_up.png" alt="WhatsApp" /></a>
+        <a href="#"><img src="image/facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="image/insta.png" alt="Instagram" /></a>
+        <a href="#"><img src="image/telegram.png" alt="Telegram" /></a>
+        <a href="#"><img src="image/youtube.png" alt="YouTube" /></a>
       </div>
-      <div class="header__right">
-        <div class="contacts">
-          <img src="image/phone.png" alt="Phone" />
-          <span>+34 641 35 22 51</span>
-        </div>
-        <div class="location">
-          <img src="image/location%201.png" alt="Location" />
-          <span>Carrer de Béjar, 38, Barcelona</span>
-        </div>
-        <div class="language">
-          <select>
+    </div>
+    <nav class="navigation">
+      <input type="checkbox" id="nav-toggler" />
+      <label for="nav-toggler" class="navigation__button">
+        <span></span>
+      </label>
+      <div class="navigation__full">
+        <div class="navigation__container">
+          <select class="language_mobile">
             <option>UKR</option>
             <option>RU</option>
-            <option>ESP</option>
             <option>EN</option>
           </select>
+          <ul class="menu_mobile">
+            <div class="background-blurs">
+              <div class="yellow-blur"></div>
+              <div class="blue-blur"></div>
+            </div>
+            <li><a href="#">Гуманітарний центр</a></li>
+            <li><a href="#">Український центр у Барселоні</a></li>
+            <li><a href="#">Бібліотека</a></li>
+            <li><a href="#">Школа та садочок</a></li>
+            <li><a href="#">Український сад</a></li>
+            <li><a href="#">Наші партнери</a></li>
+            <li><a href="#">Звіти</a></li>
+            <li><a href="#">Новини</a></li>
+            <li><a href="#">Контакти</a></li>
+          </ul>
+          <div class="contacts_mobile">
+            <div class="icons_mobile">
+              <a href="#"><img src="image/whats_up.png" alt="WhatsApp" /></a>
+              <a href="#"><img src="image/facebook.png" alt="Facebook" /></a>
+              <a href="#"><img src="image/insta.png" alt="Instagram" /></a>
+              <a href="#"><img src="image/telegram.png" alt="Telegram" /></a>
+              <a href="#"><img src="image/youtube.png" alt="YouTube" /></a>
+            </div>
+            <div class="phone_address_wrapper">
+              <div class="phone_mobile"><img src="image/phone.png"> +34 641 35 22 51</div>
+              <div class="address_mobeli"><img src="image/location%201.png">Carrer de Béjar, 38, Barcelona</div>
+            </div>
+          </div>
         </div>
       </div>
-    </header>
+    </nav>
+    <div class="header__right">
+      <div class="contacts">
+        <img src="image/phone.png" alt="Phone" />
+        <span>+34 641 35 22 51</span>
+      </div>
+      <div class="location">
+        <img src="image/location%201.png" alt="Location" />
+        <span>Carrer de Béjar, 38, Barcelona</span>
+      </div>
+      <div class="language">
+        <select>
+          <option>UKR</option>
+          <option>RU</option>
+          <option>ESP</option>
+          <option>EN</option>
+        </select>
+      </div>
+    </div>
+  </header>
     <div class="poloska"></div>
     <section class="menu">
       <div class="dropdown">
@@ -74,7 +117,7 @@
         року
       </p>
       <div class="button_first">
-        <button class="btn btn-blue">Зв’язатись</button>
+        <button class="btn btn-blue btn-header">Зв’язатись</button>
         <button class="btn btn-yellow">Підтримати</button>
       </div>
     </section>
@@ -238,33 +281,32 @@
 
     <section class="video">
       <iframe
-        class="video_ut"
-        src="https://www.youtube.com/embed/fEQqX0aaQag?si=GcDeWPtmRw0TuPa9"
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              class="video_ut"
+              src="https://www.youtube.com/embed/fEQqX0aaQag?si=GcDeWPtmRw0TuPa9"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media;
              gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
       ></iframe>
 
       <div class="text_for_video">
         <h3 class="video_head">
-          Про наші плани на майбутнє розповідає<br />
+          Про наші плани на майбутнє розповідає<br>
           засновниця Асоціації Ольга Дзюбан
         </h3>
         <p class="text_20 for_p">
           Асоціація втілює у життя культурні, освітні, гуманітарні проєкти,
-          залучаючи кошти меценатів та фондів, спираючись на підтримку
-          небайдужих людей, створюючи коло однодумців.<br />
-          Ми надихаємо на створення нових сучасних проєктів, які спрямовані на
-          популяризацію та розвиток української культури та мистецтва. Звітуємо
-          перед членами та меценатами, залучаємо нових партнерів, маємо великі
-          плани.<br />
+          залучаючи кошти меценатів та фондів, спираючись на підтримку небайдужих людей,
+          створюючи коло однодумців.<br>
+          Ми надихаємо на створення нових сучасних проєктів, які спрямовані
+          на популяризацію та розвиток української культури та мистецтва. Звітуємо перед
+          членами та меценатами, залучаємо нових партнерів, маємо великі плани.<br>
           За сутністю асоціація «Джерело» е організацією парасолькового типу.
         </p>
         <div class="video_btns">
           <button class="btn btn-yellow">Підтримати</button>
-          <button class="btn btn-border-blue">Звіти</button>
+          <button class="btn btn-border-black">Звiти</button>
         </div>
       </div>
     </section>
