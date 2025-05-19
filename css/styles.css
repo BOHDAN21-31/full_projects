@@ -798,8 +798,7 @@ li {
   display: flex;
   gap: 20px;
   align-items: flex-start;
-  flex: 1;
-  max-width: 570px;
+  max-width: 100%;
   height: 205px;
   text-align: left;
 }
@@ -837,7 +836,7 @@ li {
 .news-btn {
   display: flex;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 .contacts-section {
@@ -862,7 +861,7 @@ li {
 }
 
 .contacts-text {
-  max-width: 600px;
+  max-width: 710px;
   font-weight: 200;
   font-size: 18px;
   line-height: 1.6;
