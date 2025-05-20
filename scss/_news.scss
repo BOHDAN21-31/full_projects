@@ -61,3 +61,8 @@ font-size: 20px;
     justify-content: center;
     margin-top: 80px;
 }
+.container {
+    padding-left: calc(50vw - 720px);
+
+    padding-right: calc(50vw - 720px);
+}

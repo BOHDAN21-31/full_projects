@@ -762,7 +762,8 @@ li {
 .stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 100px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
   row-gap: 50px;
   max-width: 1200px;
   margin: 0 auto;
@@ -835,6 +836,11 @@ li {
   font-weight: 600;
 }
 
+.container {
+  padding-left: calc(50vw - 720px);
+  padding-right: calc(50vw - 720px);
+}
+
 .goals-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -884,7 +890,8 @@ li {
 .image-grid img:nth-child(2) {
   width: 100%;
   height: 260px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 15px;
 }
 
@@ -892,7 +899,8 @@ li {
   grid-column: 1/-1;
   width: 100%;
   height: 440px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 15px;
 }
 
@@ -1016,7 +1024,8 @@ li {
   width: 345px;
   height: 312px;
   border-radius: 20px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .news-content {
@@ -1047,11 +1056,16 @@ li {
   margin-top: 80px;
 }
 
+.container {
+  padding-left: calc(50vw - 720px);
+  padding-right: calc(50vw - 720px);
+}
+
 .contacts-section {
   background-color: #1A7DF0;
+  max-width: 2000px;
   color: white;
   padding: 40px 80px;
-  border-radius: 15px;
 }
 
 .contacts-section h2 {
@@ -1120,6 +1134,15 @@ li {
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+.contacts-section-new {
+  background: none;
+}
+
+.container {
+  padding-left: calc(50vw - 720px);
+  padding-right: calc(50vw - 720px);
 }
 
 .association-section {
@@ -1196,7 +1219,6 @@ li {
   gap: 0;
   padding: 0;
   grid-auto-rows: auto;
-  max-width: 1440px;
 }
 
 .img-7 {
@@ -1221,6 +1243,16 @@ li {
   margin-bottom: 30px;
   color: #333333;
   font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.container {
+  padding-left: calc(50vw - 720px);
+  padding-right: calc(50vw - 720px);
 }
 
 .benefit-itemings {
@@ -1298,6 +1330,7 @@ body {
 
 .marquee {
   display: flex;
+  width: -moz-max-content;
   width: max-content;
   animation: scroll 15s linear infinite;
 }
@@ -1527,6 +1560,4 @@ body {
   text-align: left;
   gap: 5px;
   padding-left: 0;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
