@@ -21,7 +21,7 @@
   .white { background-color: white; }
   .lightblue { background-color: #d0e7ff; }
 
-  /* Скругления */
+  
   .rounded-left { border-top-left-radius: 20px; }
   .rounded-right { border-top-right-radius: 20px; }
 
@@ -42,9 +42,9 @@
 
     .partners-section--button {
         display: flex;
-        justify-content: center; /* Центр по горизонтали */
-        gap: 16px; /* Расстояние между кнопками */
-        margin-top: 20px; /* Отступ сверху от таблицы */
+        justify-content: center; 
+        gap: 16px; 
+        margin-top: 20px; 
         white-space: nowrap
       }
     .partners-section--button button {
@@ -53,4 +53,87 @@
         line-height: 150%;
 
       }
-  
+      
+      @media (max-width: 1350px) {
+        .partners {
+          grid-auto-rows: auto; 
+        }
+      
+        .cell {
+          font-size: 13px;
+          word-wrap: break-word;
+          overflow-wrap: break-word;
+          hyphens: auto;
+        }
+      }
+      
+      @media (max-width: 700px) {
+        .partners {
+          display: grid;
+          grid-template-columns:repeat(2,1fr); 
+          gap: 2px;
+          width: 100%;
+          margin: auto;
+        }
+      
+        .partners .cell {
+          font-size: 14px;
+          word-wrap: break-word;
+          padding: 10px;
+        }
+        .partner-section h2{
+          font-size: 28px;
+          font-weight: 400;
+          line-height: 100%;
+        }
+        
+        .partners .cell:nth-child(1)  { order: 1; }  /* Ген. Консульство */
+        .partners .cell:nth-child(2)  { order: 2; }  /* Женералітат */
+        .partners .cell:nth-child(3)  { order: 3; }  /* Міська рада */
+        .partners .cell:nth-child(4)  { order: 4; }  /* Banc dels Aliments */
+        .partners .cell:nth-child(5)  { order: 5; }  /* Caixa */
+        .partners .cell:nth-child(6)  { order: 6; }  /* Planeta */
+        .partners .cell:nth-child(7)  { order: 7; }  /* Каталонська комісія */
+        .partners .cell:nth-child(8)  { order: 8; }  /* AhlawPartners */
+        .partners .cell:nth-child(9)  { order: 9; }  /* Європейське молодіжне */
+        .partners .cell:nth-child(10) { order: 10; } /* Пласт */
+        .partners .cell:nth-child(11) { order: 11; } /* Укр. асоціації */
+        .partners .cell:nth-child(12) { order: 12; } /* Іспанські організації */
+      
+        
+        .rounded-left,
+        .rounded-right {
+          border-radius: 0; 
+        }
+      
+        .partners .cell:nth-child(1) {
+          border-top-left-radius: 20px;
+        }
+      
+        .partners .cell:nth-child(2) {
+          border-top-right-radius: 20px;
+        }
+        .partners .cell:nth-child(11) {
+          
+          border-bottom-left-radius:20px ;
+        }
+        .partners .cell:nth-child(12) {
+          
+          border-bottom-right-radius:20px ;
+        }
+       
+        .partners-section--button {
+          flex-direction: column;
+          align-items: center;
+          gap: 12px;
+          margin-top: 20px;
+        }
+      
+        .partners-section--button button {
+          width: 90%;
+          font-size: 16px;
+          padding: 10px;
+        }
+      }
+      
+      
