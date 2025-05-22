@@ -68,8 +68,15 @@ font-size: 20px;
     }
     .news-card{
         margin-bottom: 80px;
+        margin-left: 20px;
     }
     .news-btn{
         margin-top: 10px;
+    }
+    .news-card p{
+        max-width: 250px;
+    }
+    .news-card h3{
+        max-width: 250px;
     }
 }
