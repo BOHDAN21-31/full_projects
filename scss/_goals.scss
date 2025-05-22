@@ -88,6 +88,8 @@
 @media (max-width: 768px) {
     .goals-container{
         grid-template-columns: 1fr;
+        max-width: 730px;
+        margin-right: 15px;
     }
     .image-grid{
         grid-template-columns: 1fr 1fr;
@@ -97,7 +99,7 @@
             height: 200px;
         }
                 .image-grid img:nth-child(3){
-                    height: 250px;
+                    height: 300px;
                     margin-top: 10px;
                 }
 }
