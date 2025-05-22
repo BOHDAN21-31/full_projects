@@ -37,6 +37,48 @@
     padding-left: 80px;
     line-height: 150%;
   }
+  @media (max-width: 700px) {
+    .text__section {
+      padding: 20px 16px;
+    }
 
+    .text__section h1 {
+      font-size: 28px;
+    }
+  
+    .text__section-row {
+      flex-direction: column;
+      gap: 24px;
+    }
+  
+    .text__section-row p,
+    .text__section-row h3 {
+      width: 100%;
+      padding: 0;
+      text-align: center;
+    }
+  
+    .text__section-row h3 {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 140%;
+    }
+  
+    .text__section-row p {
+      font-size: 16px;
+      line-height: 150%;
+    }
+    
+.text__section-row h3 p {
+  width: 100%;
+  padding: 0;
+  max-width: 100%;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+}
+
+  }
+  
   
   

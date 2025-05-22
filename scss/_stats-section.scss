@@ -8,7 +8,7 @@
     padding: 40px 20px;
     max-width: 1154px;
     font-family: 'Raleway', sans-serif;
-    text-wrap: wrap;
+    
     
     
   }
@@ -33,4 +33,29 @@
     margin: 0;
   }
 
+  @media (max-width: 700px) {
+    .stats {
+      grid-template-columns: 1fr 1fr;
+      row-gap: 30px;
+      column-gap: 0;
+      padding: 20px 16px;
+    }
+  
+    .stat-item {
+      text-align: left;
+      margin-left: 20px;
+    }
+  
+    .stat-item h2 {
+      font-size: 28px;
+    }
+  
+    .stat-item p {
+      font-size: 16px;
+    }
+  }
+
+  
+
+  
   

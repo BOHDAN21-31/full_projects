@@ -759,6 +759,41 @@ li {
   line-height: 150%;
 }
 
+@media (max-width: 700px) {
+  .text__section {
+    padding: 20px 16px;
+  }
+  .text__section h1 {
+    font-size: 28px;
+  }
+  .text__section-row {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .text__section-row p,
+  .text__section-row h3 {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .text__section-row h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 140%;
+  }
+  .text__section-row p {
+    font-size: 16px;
+    line-height: 150%;
+  }
+  .text__section-row h3 p {
+    width: 100%;
+    padding: 0;
+    max-width: 100%;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+  }
+}
 .stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -770,7 +805,6 @@ li {
   padding: 40px 20px;
   max-width: 1154px;
   font-family: "Raleway", sans-serif;
-  text-wrap: wrap;
 }
 
 .stat-item {
@@ -792,6 +826,25 @@ li {
   margin: 0;
 }
 
+@media (max-width: 700px) {
+  .stats {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    padding: 20px 16px;
+  }
+  .stat-item {
+    text-align: left;
+    margin-left: 20px;
+  }
+  .stat-item h2 {
+    font-size: 28px;
+  }
+  .stat-item p {
+    font-size: 16px;
+  }
+}
 .about-us_section {
   padding: 70px 30px;
 }
@@ -957,7 +1010,6 @@ li {
   background-color: #d0e7ff;
 }
 
-/* Скругления */
 .rounded-left {
   border-top-left-radius: 20px;
 }
@@ -981,9 +1033,9 @@ li {
 
 .partners-section--button {
   display: flex;
-  justify-content: center; /* Центр по горизонтали */
-  gap: 16px; /* Расстояние между кнопками */
-  margin-top: 20px; /* Отступ сверху от таблицы */
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
   white-space: nowrap;
 }
 
@@ -993,6 +1045,100 @@ li {
   line-height: 150%;
 }
 
+@media (max-width: 1350px) {
+  .partners {
+    grid-auto-rows: auto;
+  }
+  .cell {
+    font-size: 13px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    -webkit-hyphens: auto;
+            hyphens: auto;
+  }
+}
+@media (max-width: 700px) {
+  .partners {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    width: 100%;
+    margin: auto;
+  }
+  .partners .cell {
+    font-size: 14px;
+    word-wrap: break-word;
+    padding: 10px;
+  }
+  .partner-section h2 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 100%;
+  }
+  .partners .cell:nth-child(1) {
+    order: 1;
+  } /* Ген. Консульство */
+  .partners .cell:nth-child(2) {
+    order: 2;
+  } /* Женералітат */
+  .partners .cell:nth-child(3) {
+    order: 3;
+  } /* Міська рада */
+  .partners .cell:nth-child(4) {
+    order: 4;
+  } /* Banc dels Aliments */
+  .partners .cell:nth-child(5) {
+    order: 5;
+  } /* Caixa */
+  .partners .cell:nth-child(6) {
+    order: 6;
+  } /* Planeta */
+  .partners .cell:nth-child(7) {
+    order: 7;
+  } /* Каталонська комісія */
+  .partners .cell:nth-child(8) {
+    order: 8;
+  } /* AhlawPartners */
+  .partners .cell:nth-child(9) {
+    order: 9;
+  } /* Європейське молодіжне */
+  .partners .cell:nth-child(10) {
+    order: 10;
+  } /* Пласт */
+  .partners .cell:nth-child(11) {
+    order: 11;
+  } /* Укр. асоціації */
+  .partners .cell:nth-child(12) {
+    order: 12;
+  } /* Іспанські організації */
+  .rounded-left,
+  .rounded-right {
+    border-radius: 0;
+  }
+  .partners .cell:nth-child(1) {
+    border-top-left-radius: 20px;
+  }
+  .partners .cell:nth-child(2) {
+    border-top-right-radius: 20px;
+  }
+  .partners .cell:nth-child(11) {
+    border-bottom-left-radius: 20px;
+  }
+  .partners .cell:nth-child(12) {
+    border-bottom-right-radius: 20px;
+  }
+  .partners-section--button {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  .partners-section--button button {
+    width: 90%;
+    font-size: 16px;
+    padding: 10px;
+  }
+}
 .news-section {
   margin: 0 auto;
   padding: 40px 20px;
@@ -1155,13 +1301,6 @@ li {
   padding-right: calc(50vw - 720px);
 }
 
-@media (max-width: 768px) {
-  .contacts-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
 .association-section {
   padding: 20px 0;
   margin-left: 80px;
@@ -1178,19 +1317,29 @@ li {
   margin-bottom: 20px;
 }
 
+.association-section {
+  padding: 60px 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .association-section-container {
   display: flex;
-  gap: 40px;
-  align-items: flex-start;
-  text-wrap: wrap;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
   width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .association-section-lyst__container {
   list-style: none;
   padding-left: 0;
-  max-width: 710px;
+  max-width: 600px;
+  width: 100%;
+  flex: 1 1 45%;
 }
 
 .association-section-lyst__container li {
@@ -1228,6 +1377,22 @@ li {
   margin-top: 5px;
 }
 
+@media (max-width: 700px) {
+  .association-section-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
+  .association-section-lyst__container {
+    max-width: 100%;
+    flex: 1 1 100%;
+    margin-bottom: 4px;
+  }
+  .association-section h1 {
+    text-align: start;
+    font-size: 22px;
+  }
+}
 .projects-container {
   margin: 180px auto;
   display: grid;
@@ -1577,4 +1742,4 @@ body {
   text-align: left;
   gap: 5px;
   padding-left: 0;
-}/*# sourceMappingURL=styles.css.map */
+}
