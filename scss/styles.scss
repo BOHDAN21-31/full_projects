@@ -43,7 +43,7 @@ body {
 
 .marquee-container {
   width: 100%;
-  padding: 28px;
+  padding: 0;
   overflow: hidden;
   background: linear-gradient(to right, #eaf4ff, #fffbe5);
   border-top: 5px solid blue;
@@ -52,7 +52,7 @@ body {
 
 .marquee {
   display: flex;
-  width: max-content;
+  width: 100%;
   animation: scroll 15s linear infinite;
 
   span {
@@ -126,7 +126,10 @@ body {
     padding: 0;
   }
   .marquee-container {
-    width: 100%;
+    width: 1%;
+  }
+  .marquee {
+    width : 1%;
   }
   .button_first {
     padding: 0;
@@ -171,22 +174,22 @@ body {
 }
 .membership-section {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 20px;
+  flex-wrap: wrap;
   padding: 40px 20px;
 
-  .benefits-box, .join-box {
-    width: 50%;
-    height: auto;
-    border-radius: 30px;
-    padding: 25px 20px;
-    box-sizing: border-box;
+  .benefits-box {
+    border-radius: 45px;
+    width: fit-content;
+    padding: 56px 56px;
+    max-width: 600px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    gap: 10px;
+    justify-content: start;
+    align-items: start;
   }
 
   .benefits-box {
@@ -196,25 +199,62 @@ body {
 
   .join-box {
     background-color: #FFE711;
-    color: #000000;
-    gap: 22px;
-
-    text_h4_for_membership {
-      margin-top: 65px;
-    }
-    .join-button {
-      display: block;
-      width: 100%;
-      font-size: 16px;
-      text-align: center;
-      padding: 12px 0;
-    cursor: pointer;
-    }
+    color: #000;
+    border-radius: 45px;
+    padding: 56px 56px;
+    width: fit-content;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
   }
 
+  .join-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 65px;
+    width: 100%;
+  }
+
+  .join-text {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .membership-fee {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .join-button {
+    background-color: #1A7DF0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 40px;
+    padding: 16px 32px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 590px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+
+  .join-button:hover {
+    background-color: #005fcc;
+  }
+
+
   .button_for_membership {
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 42px;
+    font-weight: 400;
   }
 
   .benefit-item {

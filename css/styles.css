@@ -541,6 +541,9 @@ body {
   }
 }
 @media (max-width: 1240px) {
+  .marquee-container {
+    width: 375px !important;
+  }
   .main_header {
     padding: 40px 20px;
   }
@@ -633,6 +636,7 @@ body {
     align-items: flex-start !important;
   }
   .button-for-video {
+    max-width: 100%;
     padding: 15px 20px !important;
     width: 164px;
     height: 53px;
@@ -1554,7 +1558,7 @@ body {
 
 .marquee-container {
   width: 100%;
-  padding: 28px;
+  padding: 0;
   overflow: hidden;
   background: linear-gradient(to right, #eaf4ff, #fffbe5);
   border-top: 5px solid blue;
@@ -1563,7 +1567,7 @@ body {
 
 .marquee {
   display: flex;
-  width: max-content;
+  width: 100%;
   animation: scroll 15s linear infinite;
 }
 .marquee span {
@@ -1633,7 +1637,10 @@ body {
     padding: 0;
   }
   .marquee-container {
-    width: 100%;
+    width: 1%;
+  }
+  .marquee {
+    width: 1%;
   }
   .button_first {
     padding: 0;
@@ -1677,22 +1684,22 @@ body {
 }
 .membership-section {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 20px;
+  flex-wrap: wrap;
   padding: 40px 20px;
 }
-.membership-section .benefits-box, .membership-section .join-box {
-  width: 50%;
-  height: auto;
-  border-radius: 30px;
-  padding: 25px 20px;
-  box-sizing: border-box;
+.membership-section .benefits-box {
+  border-radius: 45px;
+  width: fit-content;
+  padding: 56px 56px;
+  max-width: 600px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  gap: 10px;
+  justify-content: start;
+  align-items: start;
 }
 .membership-section .benefits-box {
   background-color: #1A7DF0;
@@ -1700,23 +1707,55 @@ body {
 }
 .membership-section .join-box {
   background-color: #FFE711;
-  color: #000000;
-  gap: 22px;
+  color: #000;
+  border-radius: 45px;
+  padding: 56px 56px;
+  width: fit-content;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
-.membership-section .join-box text_h4_for_membership {
-  margin-top: 65px;
-}
-.membership-section .join-box .join-button {
-  display: block;
+.membership-section .join-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 65px;
   width: 100%;
-  font-size: 16px;
-  text-align: center;
-  padding: 12px 0;
+}
+.membership-section .join-text {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+}
+.membership-section .membership-fee {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+.membership-section .join-button {
+  background-color: #1A7DF0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  border-radius: 40px;
+  padding: 16px 32px;
   cursor: pointer;
+  width: 100%;
+  max-width: 590px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+.membership-section .join-button:hover {
+  background-color: #005fcc;
 }
 .membership-section .button_for_membership {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 42px;
+  font-weight: 400;
 }
 .membership-section .benefit-item {
   position: relative;

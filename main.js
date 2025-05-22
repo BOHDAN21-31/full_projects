@@ -6,8 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
         toggleBtn.classList.toggle("open");
         dropdownMenu.classList.toggle("visible");
     });
-
-    // Закриття меню при кліку поза межами
     document.addEventListener("click", function (e) {
         if (!toggleBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
             toggleBtn.classList.remove("open");
