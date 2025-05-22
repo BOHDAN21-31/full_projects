@@ -1,6 +1,6 @@
 .contacts-section {
     background-color: #1A7DF0;
-    max-width: 2000px;
+    max-width: 100%;
     color: white;
     padding: 40px 80px;
 }
@@ -89,6 +89,12 @@
         align-items: center;
     }
     .contacts-map{
-        max-width: 500px;
+        width: 100%;
+    }
+    .contacts-text{
+        font-size: 16px;
+    }
+    .contacts-footer{
+        font-size: 16px;
     }
 }

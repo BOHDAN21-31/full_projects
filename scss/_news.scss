@@ -65,19 +65,34 @@ font-size: 20px;
     .news-cards{
         display: flex;
         flex-direction: column;
+        margin-left: auto;
     }
     .news-card{
-        margin-bottom: 80px;
-        margin-left: 20px;
+        gap: 5px;
+        margin-left: auto;
     }
     .news-btn{
         margin-top: 10px;
     }
     .news-card p{
-        max-width: 250px;
-        max-height: 200px;
+        width: 100px;
+        max-height: 100px;
     }
     .news-card h3{
-        max-width: 250px;
+        max-width: 100%;
+        font-size: 16px;
+    }
+    .news-card img{
+        max-width: 200px;
+        max-height: 200px;
+    }
+    .news-card p{
+        font-size: 16px;
+        line-height: 1,5;
+        width: 100%;
+        margin-top: 0;
+        }
+    .news-date {
+        margin: 0;
     }
 }
