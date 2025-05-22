@@ -1219,6 +1219,7 @@ li {
   }
   .news-card p {
     max-width: 250px;
+    max-height: 200px;
   }
   .news-card h3 {
     max-width: 250px;
