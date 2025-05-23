@@ -36,14 +36,37 @@
     width: 100%;
     height: 100%;
   }
+  .text-for-gumanitaries {
+    font-size: 20px;
+  }
 
+  .benefitis-box {
+    border-radius: 45px;
+    width: fit-content;
+    height: fit-content;
+    padding: 56px 56px;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
 
+.benefitis-box {
+  background-color: #FFE711;
+  color: #000;
+}
+
+  .button_for_membership {
+    justify-content: start;
+    align-items: center;
+  }
 
  .hub_title {
   display: flex;
   justify-content: center;
     font-size: 42px;
-    font-weight: 400px;
     line-height: 100%;
  }
  
