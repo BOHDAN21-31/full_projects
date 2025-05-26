@@ -32,6 +32,7 @@
     .logo {
       width: 125px;
       height: 70px;
+      cursor: pointer;
     }
 
     .logotipi {
@@ -56,8 +57,7 @@
     }
 .poloska {
   width: 100%;
-  padding: 0 80px;
-  border: black solid 1px;
+  border:  black solid 1px;
 }
 .menu {
   display: flex;
@@ -175,6 +175,7 @@
       z-index: 1001;
       width: 40px;
       height: 40px;
+      cursor: pointer;
     }
 
     .navigation__button span,
@@ -189,6 +190,7 @@
       translate: -50% -50%;
       background: black;
       transition: 0.5s;
+      cursor: pointer;
     }
 
     .navigation__button:before {
@@ -229,6 +231,7 @@
       z-index: 1000;
       padding: 40px 25px;
       overflow-y: auto;
+      cursor: pointer;
     }
 
     input:checked ~ .navigation__full {
@@ -351,9 +354,6 @@
   }
 }
   @media (max-width: 1240px) {
-    .marquee-container {
-      width: 375px !important;
-    }
   .main_header {
     padding: 40px 20px;
 
@@ -373,23 +373,16 @@
         width: 100%;
       }
     }
-  }
 
-  .marquee {
-    font-size: 18px;
-  }
-  .marquee-container {
-    width: 550px;
-    height: 75px;
   }
   .video {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     gap: 40px;
     padding: 80px;
 
-    .video_ut {
+    &_ut {
       flex: 1;
       aspect-ratio: 16 / 9;
       border: none;

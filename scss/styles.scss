@@ -17,13 +17,8 @@ body {
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-}
-.main {
-  padding: 111px 280px 120px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  margin-left: 0;
+  margin-right: 0;
 }
 .text_20 {
   display: flex;
@@ -109,69 +104,34 @@ body {
 
 
 
-@media (max-width: 1450px) {
-  .main_header {
-    max-width: 460px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .p_for_header {
-    padding: 0;
-  }
-  .header_h1 {
-    font-size: 38px;
-    flex-direction: column;
-    text-wrap: wrap;
-    align-items: center;
-    padding: 0;
-  }
-  .marquee-container {
-    width: 1%;
-  }
-  .marquee {
-    width : 1%;
-  }
-  .button_first {
-    padding: 0;
-  }
-  .video {
-    flex-direction: column;
-    padding: 40px 20px;
-    gap: 20px;
-    align-items: center;
-  }
-  .for_p {
-    flex-direction: column;
-    align-items: center;
-    max-width: 80%;
-  }
-
-  .video-wrapper,
-  .text_for_video {
-    width: 100%;
-    max-width: 100%;
-    padding: 0 10px 0 10px;
-  }
-  .text_for_video {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0 20px 0 20px;
-  }
   @media (max-width: 720px) {
+    .video {
+  flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 20px;
+    }
     .video_ut {
-      max-width: 620px;
+      width: 100%;
+      padding: 10px 20px;
+  }
+    .text_for_video {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      padding: 10px 20px;
     }
     .video_btns {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 125px;
-      height: 26px;
+      padding-right: 0;
+    }
+    .button-for-video {
+      height: 50px;
+      width: 130px;
+      padding: 0 0;
+      margin: 0;
     }
   }
-}
+
 .membership-section {
   display: flex;
   justify-content: center;
@@ -289,6 +249,8 @@ body {
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
+    padding-right: 60px;
+    padding-left: 60px;
 
     .benefits-box, .join-box {
       width: 100%;
