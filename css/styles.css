@@ -886,7 +886,8 @@ a:hover {
 .stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 100px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
   row-gap: 50px;
   max-width: 1200px;
   margin: 0 auto;
@@ -918,7 +919,8 @@ a:hover {
   .stats {
     grid-template-columns: 1fr 1fr;
     row-gap: 30px;
-    column-gap: 0;
+    -moz-column-gap: 0;
+         column-gap: 0;
     padding: 20px 16px;
   }
   .stat-item {
@@ -1030,7 +1032,8 @@ a:hover {
 .image-grid img:nth-child(2) {
   width: 100%;
   height: 260px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 15px;
 }
 
@@ -1038,7 +1041,8 @@ a:hover {
   grid-column: 1/-1;
   width: 100%;
   height: 440px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 15px;
 }
 
@@ -1076,6 +1080,26 @@ a:hover {
   padding: 10px;
   font-size: 14px;
   text-align: center;
+}
+
+.cell {
+  transition: background-color 0.3s ease;
+}
+
+.cell.yellow:hover {
+  background-color: #fff3a0;
+}
+
+.cell.blue:hover {
+  background-color: #a0c4ff;
+}
+
+.cell.white:hover {
+  background-color: #f0f0f0;
+}
+
+.cell.lightblue:hover {
+  background-color: #d0f0ff;
 }
 
 .yellow {
@@ -1138,7 +1162,8 @@ a:hover {
     font-size: 13px;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    hyphens: auto;
+    -webkit-hyphens: auto;
+            hyphens: auto;
   }
 }
 @media (max-width: 700px) {
@@ -1256,7 +1281,8 @@ a:hover {
   width: 345px;
   height: 312px;
   border-radius: 20px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .news-card h3 {
@@ -1483,6 +1509,7 @@ a:hover {
 
 .association-section-lyst__container a:hover {
   color: cornflowerblue;
+  cursor: pointer;
 }
 
 .association-section-lyst__container li a {
@@ -1496,6 +1523,36 @@ a:hover {
 .association-section-lyst__container li a img {
   flex-shrink: 0;
   margin-top: 5px;
+}
+
+.association-section-lyst__container li a span {
+  position: relative;
+  padding-left: 40px;
+  display: inline-block;
+}
+
+.association-section-lyst__container li a span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  margin-top: 15px;
+  transform: translateY(-50%);
+  width: 21px;
+  height: 21px;
+  background-image: url("../image/blue-dot.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.lyst-1 li:nth-child(1) a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.lyst-2 li:nth-child(-n+3) a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 @media (max-width: 700px) {
@@ -1559,7 +1616,8 @@ a:hover {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
   z-index: 1;
 }
@@ -1620,7 +1678,9 @@ a:hover {
 
 .benefitis-box {
   border-radius: 45px;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding: 56px 56px;
   max-width: 600px;
@@ -1660,10 +1720,23 @@ a:hover {
 
 .hub__list {
   max-width: 710px;
+  position: relative;
+  padding-left: 40px;
+  display: inline-block;
 }
 
-.hub__list img {
-  margin-right: 0px;
+.hub__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  margin-top: 8px;
+  transform: translateY(-50%);
+  width: 21px;
+  height: 21px;
+  background-image: url("../image/blue-dot.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (max-width: 700px) {
@@ -1689,6 +1762,9 @@ a:hover {
     align-self: flex-start;
     margin-left: 0;
     padding-left: 0;
+  }
+  .hub__list li {
+    margin-left: 30px;
   }
 }
 body {
@@ -1818,6 +1894,7 @@ body {
 }
 .membership-section .benefits-box {
   border-radius: 45px;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 56px 56px;
   max-width: 600px;
@@ -1836,6 +1913,7 @@ body {
   color: #000;
   border-radius: 45px;
   padding: 56px 56px;
+  width: -moz-fit-content;
   width: fit-content;
   max-width: 600px;
   margin: 0 auto;
@@ -1957,5 +2035,3 @@ body {
   gap: 5px;
   padding-left: 0;
 }
-
-/*# sourceMappingURL=styles.css.map */

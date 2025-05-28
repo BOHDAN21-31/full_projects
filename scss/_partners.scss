@@ -16,6 +16,29 @@
     text-align: center;
   }
 
+  .cell {
+    transition: background-color 0.3s ease; 
+   
+  }
+  
+  
+  .cell.yellow:hover {
+    background-color: #fff3a0; 
+  }
+  
+  .cell.blue:hover {
+    background-color: #a0c4ff; 
+  }
+  
+  .cell.white:hover {
+    background-color: #f0f0f0; 
+  }
+  
+  .cell.lightblue:hover {
+    background-color: #d0f0ff; 
+  }
+  
+
   .yellow { background-color: #ffe600; }
   .blue { background-color: #2196f3; color: white; }
   .white { background-color: white; }

@@ -58,6 +58,7 @@
 }
 .association-section-lyst__container a:hover {
     color: cornflowerblue;
+    cursor: pointer;
 
 }
 
@@ -73,6 +74,39 @@
     flex-shrink: 0; 
     margin-top: 5px; 
   }
+
+  .association-section-lyst__container li a span {
+    position: relative;
+    padding-left: 40px; 
+    display: inline-block;
+  }
+  
+  .association-section-lyst__container li a span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    margin-top: 15px;
+    transform: translateY(-50%);
+    width: 21px;
+    height: 21px;
+    background-image: url("../image/blue-dot.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  
+  .lyst-1 li:nth-child(1) a {
+    text-decoration: underline;
+    text-underline-offset: 4px; 
+  }
+  
+  .lyst-2 li:nth-child(-n+3) a {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  
+  
 
   @media (max-width: 700px) {
     .association-section-container {
