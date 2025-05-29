@@ -56,10 +56,6 @@ font-size: 20px;
     justify-content: center;
     margin-top: 80px;
 }
-.container {
-    padding-left: calc(50vw - 720px);
-    padding-right: calc(50vw - 720px);
-}
 
 @media (max-width: 768px) {
     .news-cards{
@@ -88,7 +84,7 @@ font-size: 20px;
     }
     .news-card p{
         font-size: 16px;
-        line-height: 1,5;
+        line-height: 1.5;
         width: 100%;
         margin-top: 0;
         }
