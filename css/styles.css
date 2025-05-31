@@ -7,10 +7,6 @@ root {
   --secondary_3: #333333;
 }
 
-body {
-  font-family: "Raleway", sans-serif;
-}
-
 h1 {
   font-size: 65px;
   font-weight: 500;
@@ -71,10 +67,6 @@ root {
   --secondary_3: #333333;
 }
 
-body {
-  font-family: "Raleway", sans-serif;
-}
-
 h1 {
   font-size: 65px;
   font-weight: 500;
@@ -125,11 +117,6 @@ link {
   font-size: 12px;
   font-weight: 400;
   text-underline: black;
-}
-
-body {
-  min-width: 100%;
-  overflow-x: hidden;
 }
 
 .btn {
@@ -227,7 +214,6 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 12px 80px;
-  background-color: #fff;
   flex-wrap: wrap;
 }
 .header__left {
@@ -892,7 +878,6 @@ a:hover {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
-  max-width: 1154px;
   font-family: "Raleway", sans-serif;
 }
 
@@ -992,6 +977,11 @@ a:hover {
   font-family: "Raleway", sans-serif;
 }
 
+.container {
+  padding-left: calc(50vw - 720px);
+  padding-right: calc(50vw - 720px);
+}
+
 .goals-text-block {
   background-color: #1A7DF0;
   color: white;
@@ -1018,8 +1008,23 @@ a:hover {
   font-weight: 200;
   font-size: 20px;
   margin-bottom: 15px;
+  padding-left: 25px;
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.goals-text-block li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #FFE711;
+  border-radius: 50%;
+  box-shadow: 0 0 2px 4px rgba(255, 255, 255, 0.25);
 }
 
 .image-grid {
@@ -1275,6 +1280,7 @@ a:hover {
   max-width: 100%;
   height: 205px;
   text-align: left;
+  cursor: pointer;
 }
 
 .news-card img {
@@ -1307,11 +1313,7 @@ a:hover {
   display: flex;
   justify-content: center;
   margin-top: 80px;
-}
-
-.container {
-  padding-left: calc(50vw - 720px);
-  padding-right: calc(50vw - 720px);
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -1341,7 +1343,7 @@ a:hover {
   }
   .news-card p {
     font-size: 16px;
-    line-height: 1, 5;
+    line-height: 1.5;
     width: 100%;
     margin-top: 0;
   }
@@ -1402,6 +1404,7 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
 }
 
 .contacts-map {
@@ -1426,11 +1429,6 @@ a:hover {
 
 .contacts-section-new {
   background: none;
-}
-
-.container {
-  padding-left: calc(50vw - 720px);
-  padding-right: calc(50vw - 720px);
 }
 
 @media (max-width: 768px) {
@@ -1772,6 +1770,7 @@ body {
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 0;
   margin-left: 0;
   margin-right: 0;
 }
@@ -2034,4 +2033,4 @@ body {
   text-align: left;
   gap: 5px;
   padding-left: 0;
-}
+}/*# sourceMappingURL=styles.css.map */
