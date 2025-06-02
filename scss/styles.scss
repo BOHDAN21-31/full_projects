@@ -13,15 +13,22 @@
 @import "projects";
 @import "gumanitarnii";
 body {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.body_main {
   background-image: url("../image/bg.png");
   width: 100%;
   background-repeat: no-repeat;
   background-size: contain;
-
   background-position: top center;
-  margin-top: 0;
-  margin-left: 0;
-  margin-right: 0;
+}
+.body_mains {
+  background-image: url("../image/bg.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .text_20 {
   display: flex;
