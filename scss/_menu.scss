@@ -356,7 +356,10 @@
   @media (max-width: 1240px) {
   .main_header {
     padding: 40px 20px;
-
+    background-image: url("../image/bg.png");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
     .header_h1 {
       font-size: 28px;
     }
