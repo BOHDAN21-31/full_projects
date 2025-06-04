@@ -876,7 +876,8 @@ a:hover {
 .stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 100px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
   row-gap: 50px;
   max-width: 1200px;
   margin: 0 auto;
@@ -907,7 +908,8 @@ a:hover {
   .stats {
     grid-template-columns: 1fr 1fr;
     row-gap: 30px;
-    column-gap: 0;
+    -moz-column-gap: 0;
+         column-gap: 0;
     padding: 20px 16px;
   }
   .stat-item {
@@ -1039,7 +1041,8 @@ a:hover {
 .image-grid img:nth-child(2) {
   width: 100%;
   height: 260px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 15px;
 }
 
@@ -1047,7 +1050,8 @@ a:hover {
   grid-column: 1/-1;
   width: 100%;
   height: 440px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 15px;
 }
 
@@ -1167,7 +1171,8 @@ a:hover {
     font-size: 13px;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    hyphens: auto;
+    -webkit-hyphens: auto;
+            hyphens: auto;
   }
 }
 @media (max-width: 700px) {
@@ -1286,7 +1291,8 @@ a:hover {
   width: 345px;
   height: 312px;
   border-radius: 20px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .news-card h3 {
@@ -1576,12 +1582,35 @@ a:hover {
   padding: 0;
   grid-auto-rows: auto;
 }
+
 .projects__card {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
   display: block;
 }
+
+.project__card--colored {
+  min-height: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+}
+
+.projects__card--yellow {
+  background-color: #FFE711;
+}
+
+.projects__card--blue {
+  background: #1A7DF0;
+}
+
+.projects__text {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 500;
+}
+
 .projects__card:before {
   content: "";
   position: absolute;
@@ -1590,44 +1619,81 @@ a:hover {
   width: 100%;
   height: 100%;
   z-index: 2;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 42%, rgba(1, 30, 65, 0.72) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 100%);
 }
+
 .projects__card--colored:before {
   display: none;
 }
-.projects__card--yellow {
-  background: #FFE711;
-  color: #333333;
-}
-.projects__card--blue {
-  background: #1A7DF0;
-}
-.projects__card:nth-child(1), .projects__card:nth-child(3), .projects__card:nth-child(5) {
-  grid-row: span 2;
-}
-.projects__card:nth-child(4) {
-  grid-row: span 3;
-}
+
 .projects__image {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
   z-index: 1;
 }
 
+.projects__card:not(.projects__card--colored) .projects__text {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  z-index: 3;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.projects__card--colored {
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
+}
+
+.projects__card--colored .projects__text {
+  position: static;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.3;
+  text-shadow: none;
+}
+
+.projects__card:nth-child(1),
+.projects__card:nth-child(3),
+.projects__card:nth-child(5) {
+  grid-row: span 2;
+}
+
+.projects__card:nth-child(4) {
+  grid-row: span 3;
+}
+
+.container {
+  padding-left: calc(50vw - 720px);
+  padding-right: calc(50vw - 720px);
+}
+
 @media (max-width: 768px) {
-  .projects-container {
+  .projects {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 130px 50px 130px 200px 130px;
+    grid-template-rows: auto;
+    gap: 12px;
   }
-  .project-card:nth-child(4) {
-    grid-row: unset;
+  .projects__card {
+    grid-column: span 1 !important;
+    grid-row: auto !important;
   }
-  .project-card:nth-child(6) {
-    grid-column: 1/2;
-    grid-row: 3/4;
+  .projects__card:nth-child(4) {
+    grid-column: span 2;
+  }
+  .projects__text {
+    font-size: 12px;
+    font-weight: 500;
   }
 }
 .benefit-itemings {
@@ -1673,7 +1739,9 @@ a:hover {
 
 .benefitis-box {
   border-radius: 45px;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding: 56px 56px;
   max-width: 600px;
@@ -1899,6 +1967,7 @@ body {
 }
 .membership-section .benefits-box {
   border-radius: 45px;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 56px 56px;
   max-width: 600px;
@@ -1917,6 +1986,7 @@ body {
   color: #000;
   border-radius: 45px;
   padding: 56px 56px;
+  width: -moz-fit-content;
   width: fit-content;
   max-width: 600px;
   margin: 0 auto;
@@ -2037,6 +2107,4 @@ body {
   text-align: left;
   gap: 5px;
   padding-left: 0;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
