@@ -876,7 +876,8 @@ a:hover {
 .stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 100px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
   row-gap: 50px;
   max-width: 1200px;
   margin: 0 auto;
@@ -907,7 +908,8 @@ a:hover {
   .stats {
     grid-template-columns: 1fr 1fr;
     row-gap: 30px;
-    column-gap: 0;
+    -moz-column-gap: 0;
+         column-gap: 0;
     padding: 20px 16px;
   }
   .stat-item {
@@ -970,6 +972,28 @@ a:hover {
   padding-right: calc(50vw - 720px);
 }
 
+@media (max-width: 768px) {
+  .about-us_section {
+    margin-left: 20px;
+  }
+  .about-columns {
+    flex-direction: column;
+  }
+  .about-left,
+  .about-right {
+    flex: 1 1 100%;
+    gap: 15px;
+  }
+  .about-left {
+    font-size: 22px;
+  }
+  .about-right p {
+    font-size: 16px;
+  }
+  .about-title {
+    font-size: 32px;
+  }
+}
 .goals-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1039,7 +1063,8 @@ a:hover {
 .image-grid img:nth-child(2) {
   width: 100%;
   height: 260px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 15px;
 }
 
@@ -1047,7 +1072,8 @@ a:hover {
   grid-column: 1/-1;
   width: 100%;
   height: 440px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 15px;
 }
 
@@ -1055,7 +1081,8 @@ a:hover {
   .goals-container {
     grid-template-columns: 1fr;
     max-width: 730px;
-    margin-right: 15px;
+    align-items: center;
+    margin: 10px;
   }
   .image-grid {
     grid-template-columns: 1fr 1fr;
@@ -1167,7 +1194,8 @@ a:hover {
     font-size: 13px;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    hyphens: auto;
+    -webkit-hyphens: auto;
+            hyphens: auto;
   }
 }
 @media (max-width: 700px) {
@@ -1286,7 +1314,8 @@ a:hover {
   width: 345px;
   height: 312px;
   border-radius: 20px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .news-card h3 {
@@ -1315,13 +1344,16 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+  .news-section {
+    margin: 10px;
+  }
   .news-cards {
     display: flex;
     flex-direction: column;
     margin-left: auto;
   }
   .news-card {
-    gap: 5px;
+    gap: 10px;
     margin-left: auto;
   }
   .news-btn {
@@ -1333,7 +1365,7 @@ a:hover {
   }
   .news-card h3 {
     max-width: 100%;
-    font-size: 16px;
+    font-size: 14px;
   }
   .news-card img {
     max-width: 200px;
@@ -1341,7 +1373,7 @@ a:hover {
   }
   .news-card p {
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.3;
     width: 100%;
     margin-top: 0;
   }
@@ -1624,7 +1656,8 @@ a:hover {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
   z-index: 1;
 }
@@ -1732,7 +1765,9 @@ a:hover {
 
 .benefitis-box {
   border-radius: 45px;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding: 56px 56px;
   max-width: 600px;
@@ -1958,6 +1993,7 @@ body {
 }
 .membership-section .benefits-box {
   border-radius: 45px;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 56px 56px;
   max-width: 600px;
@@ -1976,6 +2012,7 @@ body {
   color: #000;
   border-radius: 45px;
   padding: 56px 56px;
+  width: -moz-fit-content;
   width: fit-content;
   max-width: 600px;
   margin: 0 auto;
@@ -2096,6 +2133,4 @@ body {
   text-align: left;
   gap: 5px;
   padding-left: 0;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
