@@ -363,14 +363,20 @@
     box-sizing: border-box;
     .header_h1 {
       font-size: 28px;
+      text-align: center;
+
     }
 
     .p_for_header {
       font-size: 16px;
+      text-align: center;
     }
 
     .button_first {
       flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      width: 100%;
       padding-right: 29px;
       gap: 12px;
       padding-bottom: 5px;

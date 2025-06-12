@@ -540,12 +540,17 @@ link {
   }
   .main_header .header_h1 {
     font-size: 28px;
+    text-align: center;
   }
   .main_header .p_for_header {
     font-size: 16px;
+    text-align: center;
   }
   .main_header .button_first {
     flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
     padding-right: 29px;
     gap: 12px;
     padding-bottom: 5px;
@@ -2084,14 +2089,14 @@ body {
   .membership-section {
     flex-direction: column;
     align-items: center;
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .membership-section .benefits-box,
   .membership-section .join-box {
     width: 100%;
-    height: auto;
-    padding: 20px;
+    height: 100%;
+    padding: 50px;
   }
   .membership-section .button_for_membership {
     font-size: 22px;
