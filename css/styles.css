@@ -888,7 +888,8 @@ a:hover {
 .stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 100px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
   row-gap: 50px;
   max-width: 1200px;
   margin: 0 auto;
@@ -919,7 +920,8 @@ a:hover {
   .stats {
     grid-template-columns: 1fr 1fr;
     row-gap: 30px;
-    column-gap: 0;
+    -moz-column-gap: 0;
+         column-gap: 0;
     padding: 20px 16px;
   }
   .stat-item {
@@ -1073,7 +1075,8 @@ a:hover {
 .image-grid img:nth-child(2) {
   width: 100%;
   height: 260px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 15px;
 }
 
@@ -1081,7 +1084,8 @@ a:hover {
   grid-column: 1/-1;
   width: 100%;
   height: 440px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 15px;
 }
 
@@ -1202,7 +1206,8 @@ a:hover {
     font-size: 13px;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    hyphens: auto;
+    -webkit-hyphens: auto;
+            hyphens: auto;
   }
 }
 @media (max-width: 700px) {
@@ -1321,7 +1326,8 @@ a:hover {
   width: 345px;
   height: 312px;
   border-radius: 20px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .news-card h3 {
@@ -1615,6 +1621,18 @@ a:hover {
   grid-auto-rows: auto;
 }
 
+.projects__title {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.container {
+  padding-left: calc(50vw - 720px);
+  padding-right: calc(50vw - 720px);
+}
+
 .projects__card {
   position: relative;
   border-radius: 20px;
@@ -1662,7 +1680,8 @@ a:hover {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
   z-index: 1;
 }
@@ -1704,11 +1723,6 @@ a:hover {
   grid-row: span 3;
 }
 
-.container {
-  padding-left: calc(50vw - 720px);
-  padding-right: calc(50vw - 720px);
-}
-
 @media (max-width: 768px) {
   .projects {
     grid-template-columns: 1fr 1fr;
@@ -1723,8 +1737,9 @@ a:hover {
     grid-column: span 2;
   }
   .projects__text {
-    font-size: 12px;
+    font-size: 16px !important;
     font-weight: 500;
+    line-height: 0.5;
   }
 }
 .benefit-itemings {
@@ -1770,7 +1785,9 @@ a:hover {
 
 .benefitis-box {
   border-radius: 45px;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding: 56px 56px;
   max-width: 600px;
@@ -1995,9 +2012,10 @@ body {
 .membership-section .benefits-box,
 .membership-section .join-box {
   border-radius: 45px;
-  width: 540px;
-  padding: 56px;
-  box-sizing: border-box;
+  width: fit-content;
+  padding: 56px 56px;
+  max-width: 600px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -2013,6 +2031,11 @@ body {
 .membership-section .join-box {
   background-color: #FFE711;
   color: #000;
+  border-radius: 45px;
+  padding: 56px 56px;
+  width: fit-content;
+  max-width: 600px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -2133,6 +2156,4 @@ body {
   text-align: left;
   gap: 5px;
   padding-left: 0;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
