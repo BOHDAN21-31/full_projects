@@ -360,6 +360,7 @@
     width: 100%;
     background-size: cover;
     background-position: center;
+    box-sizing: border-box;
     .header_h1 {
       font-size: 28px;
     }
@@ -370,7 +371,9 @@
 
     .button_first {
       flex-direction: column;
+      padding-right: 29px;
       gap: 12px;
+      padding-bottom: 5px;
 
       .btn {
         width: 100%;
@@ -417,10 +420,14 @@
 
       .video_btns {
         display: flex;
+        justify-content: center;
+        max-width: 100%;
+        flex-direction: column;
         gap: 20px;
         flex-wrap: wrap;
 
         .btn {
+          max-width: 100%;
           padding: 12px 24px;
           font-size: 16px;
           }
