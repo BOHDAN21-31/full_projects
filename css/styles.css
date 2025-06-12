@@ -1723,6 +1723,11 @@ a:hover {
   grid-row: span 3;
 }
 
+.container {
+  padding-left: calc(50vw - 720px);
+  padding-right: calc(50vw - 720px);
+}
+
 @media (max-width: 768px) {
   .projects {
     grid-template-columns: 1fr 1fr;
@@ -2118,7 +2123,7 @@ body {
   .membership-section .benefits-box,
   .membership-section .join-box {
     width: 100%;
-    height: 100%;
+    height: auto;
     padding: 50px;
   }
   .membership-section .button_for_membership {
@@ -2134,24 +2139,54 @@ body {
 }
 
 .team-section {
-  padding: 60px 80px;
+  padding: 40px 20px;
 }
-.team-section .team-title {
+
+.team-title {
   text-align: center;
+  margin-bottom: 30px;
 }
-.team-section .team-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 40px;
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
-.team-section .team-member {
-  flex: 1 1 calc(25% - 30px);
-  min-width: 250px;
-  gap: 0;
+
+.team-member {
   display: flex;
   flex-direction: column;
+  align-items: start;
+  text-align: start;
 }
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.team-member h4 {
+  margin: 8px 0 4px 0;
+  font-size: 20px;
+  text-align: start;
+}
+
+.team-member .text_18 {
+  margin: 0;
+  font-size: 16px;
+  text-align: start;
+}
+
+@media (min-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
+
 .team-section .team-member .member-text {
   text-align: left;
   gap: 5px;
