@@ -888,8 +888,7 @@ a:hover {
 .stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  -moz-column-gap: 100px;
-       column-gap: 100px;
+  column-gap: 100px;
   row-gap: 50px;
   max-width: 1200px;
   margin: 0 auto;
@@ -920,8 +919,7 @@ a:hover {
   .stats {
     grid-template-columns: 1fr 1fr;
     row-gap: 30px;
-    -moz-column-gap: 0;
-         column-gap: 0;
+    column-gap: 0;
     padding: 20px 16px;
   }
   .stat-item {
@@ -1075,8 +1073,7 @@ a:hover {
 .image-grid img:nth-child(2) {
   width: 100%;
   height: 260px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 15px;
 }
 
@@ -1084,8 +1081,7 @@ a:hover {
   grid-column: 1/-1;
   width: 100%;
   height: 440px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 15px;
 }
 
@@ -1206,8 +1202,7 @@ a:hover {
     font-size: 13px;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    -webkit-hyphens: auto;
-            hyphens: auto;
+    hyphens: auto;
   }
 }
 @media (max-width: 700px) {
@@ -1326,8 +1321,7 @@ a:hover {
   width: 345px;
   height: 312px;
   border-radius: 20px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .news-card h3 {
@@ -1680,8 +1674,7 @@ a:hover {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: relative;
   z-index: 1;
 }
@@ -1721,11 +1714,6 @@ a:hover {
 
 .projects__card:nth-child(4) {
   grid-row: span 3;
-}
-
-.container {
-  padding-left: calc(50vw - 720px);
-  padding-right: calc(50vw - 720px);
 }
 
 @media (max-width: 768px) {
@@ -1790,9 +1778,7 @@ a:hover {
 
 .benefitis-box {
   border-radius: 45px;
-  width: -moz-fit-content;
   width: fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   padding: 56px 56px;
   max-width: 600px;
@@ -2017,10 +2003,9 @@ body {
 .membership-section .benefits-box,
 .membership-section .join-box {
   border-radius: 45px;
-  width: fit-content;
-  padding: 56px 56px;
-  max-width: 600px;
-  margin: 0 auto;
+  width: 540px;
+  padding: 56px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -2036,11 +2021,6 @@ body {
 .membership-section .join-box {
   background-color: #FFE711;
   color: #000;
-  border-radius: 45px;
-  padding: 56px 56px;
-  width: fit-content;
-  max-width: 600px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -2186,9 +2166,3 @@ body {
 }
 
 /*# sourceMappingURL=styles.css.map */
-
-.team-section .team-member .member-text {
-  text-align: left;
-  gap: 5px;
-  padding-left: 0;
-}/*# sourceMappingURL=styles.css.map */
