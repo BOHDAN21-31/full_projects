@@ -13,6 +13,7 @@
 @import "projects";
 @import "gumanitarnii";
 body {
+  font-family: 'Raleway', sans-serif;
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
@@ -115,6 +116,10 @@ body {
 
 
   @media (max-width: 720px) {
+    body {
+      overflow-x: hidden;
+      width: 100%;
+    }
     .video {
   flex-direction: column;
       align-items: center;
@@ -126,6 +131,8 @@ body {
       padding: 10px 20px;
   }
     .text_for_video {
+      overflow-x: auto;
+      max-width: 100vw;
       flex-direction: row;
       justify-content: space-between;
       width: 100%;

@@ -888,8 +888,7 @@ a:hover {
 .stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  -moz-column-gap: 100px;
-       column-gap: 100px;
+  column-gap: 100px;
   row-gap: 50px;
   max-width: 1200px;
   margin: 0 auto;
@@ -920,8 +919,7 @@ a:hover {
   .stats {
     grid-template-columns: 1fr 1fr;
     row-gap: 30px;
-    -moz-column-gap: 0;
-         column-gap: 0;
+    column-gap: 0;
     padding: 20px 16px;
   }
   .stat-item {
@@ -1075,8 +1073,7 @@ a:hover {
 .image-grid img:nth-child(2) {
   width: 100%;
   height: 260px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 15px;
 }
 
@@ -1084,8 +1081,7 @@ a:hover {
   grid-column: 1/-1;
   width: 100%;
   height: 440px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 15px;
 }
 
@@ -1206,8 +1202,7 @@ a:hover {
     font-size: 13px;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    -webkit-hyphens: auto;
-            hyphens: auto;
+    hyphens: auto;
   }
 }
 @media (max-width: 700px) {
@@ -1329,8 +1324,7 @@ a:hover {
   width: 345px;
   height: 312px;
   border-radius: 20px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .news-card h3 {
@@ -1660,8 +1654,9 @@ a:hover {
 
 .projects__text {
   color: #FFFFFF;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
 }
 
 .projects__card:before {
@@ -1683,8 +1678,7 @@ a:hover {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: relative;
   z-index: 1;
 }
@@ -1695,7 +1689,7 @@ a:hover {
   left: 16px;
   right: 16px;
   z-index: 3;
-  color: white;
+  color: #FFFFFF;
   font-size: 24px;
   font-weight: 600;
   line-height: 1.4;
@@ -1710,10 +1704,13 @@ a:hover {
 
 .projects__card--colored .projects__text {
   position: static;
-  font-size: 24px;
   font-weight: 600;
   line-height: 1.3;
   text-shadow: none;
+}
+
+.projects__card--yellow--text {
+  color: #000;
 }
 
 .projects__card:nth-child(1),
@@ -1788,9 +1785,7 @@ a:hover {
 
 .benefitis-box {
   border-radius: 45px;
-  width: -moz-fit-content;
   width: fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   padding: 56px 56px;
   max-width: 600px;
@@ -1878,6 +1873,7 @@ a:hover {
   }
 }
 body {
+  font-family: "Raleway", sans-serif;
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
@@ -1980,6 +1976,10 @@ body {
 }
 
 @media (max-width: 720px) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
   .video {
     flex-direction: column;
     align-items: center;
@@ -1991,6 +1991,8 @@ body {
     padding: 10px 20px;
   }
   .text_for_video {
+    overflow-x: auto;
+    max-width: 100vw;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
@@ -2176,3 +2178,5 @@ body {
     gap: 30px;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */
